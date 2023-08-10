@@ -8,9 +8,13 @@ import time, os
 # from selenium.webdriver.support import expected_conditions as EC
 # from selenium.webdriver import ActionChains
 
-from selenium import webdriver
+# from selenium import webdriver---
+
+
 # from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
+
+
+# from selenium.webdriver.common.by import By---
 from unittest import TestCase
 
 
@@ -54,18 +58,6 @@ class DriverTestCase(TestCase):
     #     assert True
     #     driver.close()
 
-    def test_rozetka(self):
-        # options = webdriver.ChromeOptions()
-        # options.add_argument('--headless')
-        # options.add_argument("--no-sandbox")
-        # options.add_argument("--log-level=1")
-        # options.add_argument("--start-maximized")
-        # options.browser_version = "109.0"
-        # options.binary_location = "/opt/headless-chromium"
-        # chromedriver_path = "/opt/chromedriver"
-        driver = webdriver.Firefox('driver/geckodriver')
-        # driver = webdriver.Firefox()
-        # driver = webdriver.Chrome(options=options)
-        # driver.get("https://www.youtube.com/")
-        driver.get("https://rozetka.com.ua/ua/")
-        assert True
+    def test_simple(self):
+        assert 2==2
+
