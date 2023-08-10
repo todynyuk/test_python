@@ -63,7 +63,8 @@ class DriverTestCase(TestCase):
         # options.browser_version = "109.0"
         # options.binary_location = "/opt/headless-chromium"
         # chromedriver_path = "/opt/chromedriver"
-        driver = webdriver.Firefox()
+        driver = webdriver.Firefox('driver/geckodriver')
+        # driver = webdriver.Firefox()
         # driver = webdriver.Chrome(options=options)
         # driver.get("https://www.youtube.com/")
         driver.get("https://rozetka.com.ua/ua/")
