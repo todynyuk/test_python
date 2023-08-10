@@ -60,6 +60,7 @@ class DriverTestCase(TestCase):
         options.add_argument("--no-sandbox")
         options.add_argument("--log-level=1")
         options.add_argument("--start-maximized")
+        options.browser_version = "109.0"
         # options.binary_location = "/opt/headless-chromium"
         # chromedriver_path = "/opt/chromedriver"
         driver = webdriver.Chrome(options=options)
